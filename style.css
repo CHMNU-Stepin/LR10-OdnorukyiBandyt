@@ -1,0 +1,81 @@
+body{
+    background: #323232;
+    font: 300 14pt 'Fixel Text';
+    color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f6eee3;
+    border: black 0.5vh solid;
+    border-radius: 1vh;
+    box-shadow: 20px 16px rgba(0, 0, 0, 0.7);
+    margin: 5vh 0;
+    padding: 3vh;
+    width: 80%;
+    max-width: 500px;
+}
+.reel-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 0;
+}
+.reel {
+    font-size: 3rem;
+    padding: 1rem;
+    background: #fff;
+    border: 2px solid #323232;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+}
+button {
+    padding: 1rem 2rem;
+    background: #323232;
+    color: #f6eee3;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+button:hover {
+    background: #505050;
+}
+button.won {
+    background: green;
+    color: white;
+}
+button.lost {
+    background: red;
+    color: white;
+}
+.message {
+    font-size: 1.2rem;
+    margin-top: 2vh;
+}
+@media (max-width: 420px) {
+    .reel-container {
+        transform: scale(0.8); 
+    }
+}
+@media (max-width: 325px) {
+    .reel-container {
+        transform: scale(0.6) 
+    }
+}
+@media (max-width: 240px) {
+    .reel-container {
+        transform: scale(0.4);
+    }
+}
